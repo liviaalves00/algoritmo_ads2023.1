@@ -1,0 +1,22 @@
+#Leia 2 (dois) números, verifique e escreva 
+#o menor e o maior entre os números lidos
+
+def main():
+    #Entrada 
+    numero1 = float(input('Digite o primerio numero: '))
+
+    numero2 = float(input('Digite o segundo numero: '))
+
+    #Processamento 
+    verificacao_maior_menor = verificar_maior_menor(numero1, numero2)
+
+    #Saída 
+    print(verificacao_maior_menor)
+
+def verificar_maior_menor(num1, num2):
+    if num1 > num2:
+        return 'O numero {} é maior e o numero {} é menor'.format(num1,num2)
+    else:
+        return 'O numero {} é maior e o numero {} é menor'.format(num2,num1)
+
+main()

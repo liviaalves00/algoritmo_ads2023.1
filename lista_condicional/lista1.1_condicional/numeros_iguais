@@ -1,0 +1,26 @@
+#Leia 3 (três) números,verifique e escreva
+#quantos números iguais existem entre os números.
+
+def main():
+    #Entrada
+    numero1 = float(input('Digite o primeiro numero: '))
+
+    numero2 = float(input('Digite o segundo numero: '))
+
+    numero3 = float(input('Digite o teceiro numero: '))
+
+    #Processamento
+    verificacao_numeros = verificar_numeros_iguais(numero1, numero2, numero3)
+
+    #Saída
+    print( verificacao_numeros)
+
+def verificar_numeros_iguais(num1, num2, num3):
+    if num1 == num2 == num3:
+        return'todos os valores sao iguais'
+    elif num1 == num2 or num1 == num3 or num2 == num3:
+        return 'dois valores igual'
+    else:
+        return 'nenhum valor igual'
+    
+main()
